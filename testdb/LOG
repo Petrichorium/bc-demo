@@ -1,0 +1,41 @@
+=============== Feb 18, 2023 (CST) ===============
+21:20:54.702952 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:20:54.719105 db@open opening
+21:20:54.719720 version@stat F·[] S·0B[] Sc·[]
+21:20:54.730145 db@janitor F·2 G·0
+21:20:54.730271 db@open done T·11.124458ms
+=============== Feb 18, 2023 (CST) ===============
+21:22:28.484408 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:22:28.485153 version@stat F·[] S·0B[] Sc·[]
+21:22:28.485172 db@open opening
+21:22:28.485253 journal@recovery F·1
+21:22:28.486091 journal@recovery recovering @1
+21:22:28.486616 version@stat F·[] S·0B[] Sc·[]
+21:22:28.510371 db@janitor F·2 G·0
+21:22:28.511685 db@open done T·26.491083ms
+21:22:28.511907 db@close closing
+21:22:28.512072 db@close done T·163.875µs
+=============== Feb 18, 2023 (CST) ===============
+21:24:16.228846 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:24:16.229773 version@stat F·[] S·0B[] Sc·[]
+21:24:16.229797 db@open opening
+21:24:16.229884 journal@recovery F·1
+21:24:16.230873 journal@recovery recovering @2
+21:24:16.237928 memdb@flush created L0@4 N·1 S·137B "Pet..hor,v1":"Pet..hor,v1"
+21:24:16.238548 version@stat F·[1] S·137B[137B] Sc·[0.25]
+21:24:16.257261 db@janitor F·3 G·0
+21:24:16.257351 db@open done T·27.534625ms
+21:24:16.257512 db@close closing
+21:24:16.257658 db@close done T·128.291µs
+=============== Feb 18, 2023 (CST) ===============
+21:24:58.170589 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:24:58.171395 version@stat F·[1] S·137B[137B] Sc·[0.25]
+21:24:58.171415 db@open opening
+21:24:58.171506 journal@recovery F·1
+21:24:58.172600 journal@recovery recovering @5
+21:24:58.190457 memdb@flush created L0@7 N·1 S·137B "Pet..hor,v3":"Pet..hor,v3"
+21:24:58.190957 version@stat F·[2] S·274B[274B] Sc·[0.50]
+21:24:58.215385 db@janitor F·4 G·0
+21:24:58.215517 db@open done T·44.083292ms
+21:24:58.215754 db@close closing
+21:24:58.215949 db@close done T·196.5µs

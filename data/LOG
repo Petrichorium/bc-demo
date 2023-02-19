@@ -1,0 +1,20 @@
+=============== Feb 19, 2023 (CST) ===============
+12:41:32.931131 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:41:32.947556 db@open opening
+12:41:32.948357 version@stat F·[] S·0B[] Sc·[]
+12:41:32.959107 db@janitor F·2 G·0
+12:41:32.959153 db@open done T·11.573583ms
+12:41:32.959718 db@close closing
+12:41:32.959785 db@close done T·67.042µs
+=============== Feb 19, 2023 (CST) ===============
+12:42:12.740499 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:42:12.740984 version@stat F·[] S·0B[] Sc·[]
+12:42:12.741001 db@open opening
+12:42:12.741100 journal@recovery F·1
+12:42:12.742093 journal@recovery recovering @1
+12:42:12.752166 memdb@flush created L0@2 N·6 S·658B "b_0..983,v5":"lasthash,v2"
+12:42:12.752673 version@stat F·[1] S·658B[658B] Sc·[0.25]
+12:42:12.772214 db@janitor F·3 G·0
+12:42:12.772406 db@open done T·31.389166ms
+12:42:12.773173 db@close closing
+12:42:12.773302 db@close done T·118.209µs

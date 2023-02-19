@@ -32,9 +32,9 @@ type BlockHeader struct {
 func NewBlock(prevHash Hash, txs string) *Block {
 	b := &Block{
 		header: BlockHeader{
-			version:         nodeVersion,
-			hashMerkleBlock: prevHash, //设置前面区块的hash
-			time:            time.Now(),
+			version:       nodeVersion,
+			hashPrevBlock: prevHash, //设置前面区块的hash
+			time:          time.Now(),
 		},
 		txs:        txs,
 		txsCounter: 1,
