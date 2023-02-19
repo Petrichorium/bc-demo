@@ -18,3 +18,162 @@
 12:42:12.772406 db@open done T·31.389166ms
 12:42:12.773173 db@close closing
 12:42:12.773302 db@close done T·118.209µs
+=============== Feb 19, 2023 (CST) ===============
+17:53:10.088376 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:53:10.090797 version@stat F·[1] S·658B[658B] Sc·[0.25]
+17:53:10.090821 db@open opening
+17:53:10.090893 journal@recovery F·1
+17:53:10.091869 journal@recovery recovering @3
+17:53:10.106520 memdb@flush created L0@5 N·4 S·599B "b_1..9aa,v8":"lasthash,v9"
+17:53:10.107020 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+17:53:10.128771 db@janitor F·4 G·0
+17:53:10.129165 db@open done T·38.331167ms
+17:53:10.129950 db@close closing
+17:53:10.130103 db@close done T·140.291µs
+=============== Feb 19, 2023 (CST) ===============
+17:53:20.229202 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:53:20.229754 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+17:53:20.229774 db@open opening
+17:53:20.229847 journal@recovery F·1
+17:53:20.230662 journal@recovery recovering @6
+17:53:20.239579 memdb@flush created L0@8 N·2 S·473B "b_9..b60,v13":"lasthash,v14"
+17:53:20.239982 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+17:53:20.264809 db@janitor F·5 G·0
+17:53:20.264915 db@open done T·35.122084ms
+17:53:20.265841 db@close closing
+17:53:20.266032 db@close done T·193.25µs
+=============== Feb 19, 2023 (CST) ===============
+18:09:09.878345 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:09:09.878937 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+18:09:09.878958 db@open opening
+18:09:09.879034 journal@recovery F·1
+18:09:09.879943 journal@recovery recovering @9
+18:09:09.880460 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+18:09:09.901795 db@janitor F·5 G·0
+18:09:09.902798 db@open done T·23.818417ms
+18:09:09.903530 db@close closing
+18:09:09.903726 db@close done T·184.875µs
+=============== Feb 19, 2023 (CST) ===============
+18:09:12.123012 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:09:12.123564 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+18:09:12.123588 db@open opening
+18:09:12.123663 journal@recovery F·1
+18:09:12.124561 journal@recovery recovering @11
+18:09:12.134995 memdb@flush created L0@13 N·9 S·838B "b_0..983,d17":"lasthash,v24"
+18:09:12.135459 version@stat F·[4] S·2KiB[2KiB] Sc·[1.00]
+18:09:12.154831 db@janitor F·6 G·0
+18:09:12.155320 db@open done T·31.716917ms
+18:09:12.155441 table@compaction L0·4 -> L1·0 S·2KiB Q·25
+18:09:12.155927 db@close closing
+18:09:12.161114 table@build created L1@16 N·2 S·405B "b_9..55a,v23":"lasthash,v24"
+18:09:12.161229 table@build exiting
+18:09:12.161243 table@build revert @16
+18:09:12.161516 db@close done T·5.587417ms
+=============== Feb 19, 2023 (CST) ===============
+18:11:36.215739 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:11:36.216623 version@stat F·[4] S·2KiB[2KiB] Sc·[1.00]
+18:11:36.216644 db@open opening
+18:11:36.216733 journal@recovery F·1
+18:11:36.217631 journal@recovery recovering @14
+18:11:36.218101 version@stat F·[4] S·2KiB[2KiB] Sc·[1.00]
+18:11:36.242389 db@janitor F·6 G·0
+18:11:36.244290 db@open done T·27.633333ms
+18:11:36.244364 table@compaction L0·4 -> L1·0 S·2KiB Q·25
+18:11:36.245042 db@close closing
+18:11:36.250289 table@build created L1@18 N·2 S·405B "b_9..55a,v23":"lasthash,v24"
+18:11:36.250314 table@build exiting
+18:11:36.250325 table@build revert @18
+18:11:36.250568 db@close done T·5.524792ms
+=============== Feb 19, 2023 (CST) ===============
+18:11:39.077374 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:11:39.078024 version@stat F·[4] S·2KiB[2KiB] Sc·[1.00]
+18:11:39.078053 db@open opening
+18:11:39.078146 journal@recovery F·1
+18:11:39.079138 journal@recovery recovering @16
+18:11:39.089495 memdb@flush created L0@18 N·2 S·485B "b_b..15f,v26":"lasthash,v27"
+18:11:39.090172 version@stat F·[5] S·2KiB[2KiB] Sc·[1.25]
+18:11:39.109217 db@janitor F·7 G·0
+18:11:39.109370 db@open done T·31.293458ms
+18:11:39.109575 table@compaction L0·5 -> L1·0 S·2KiB Q·28
+18:11:39.110499 db@close closing
+18:11:39.115333 table@build created L1@21 N·3 S·541B "b_9..55a,v23":"lasthash,v27"
+18:11:39.115377 table@build exiting
+18:11:39.115393 table@build revert @21
+18:11:39.115875 db@close done T·5.375292ms
+=============== Feb 19, 2023 (CST) ===============
+18:12:12.262123 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:12:12.262741 version@stat F·[5] S·2KiB[2KiB] Sc·[1.25]
+18:12:12.262763 db@open opening
+18:12:12.262841 journal@recovery F·1
+18:12:12.263847 journal@recovery recovering @19
+18:12:12.264499 version@stat F·[5] S·2KiB[2KiB] Sc·[1.25]
+18:12:12.297425 db@janitor F·7 G·0
+18:12:12.297499 db@open done T·34.720833ms
+18:12:12.297577 table@compaction L0·5 -> L1·0 S·2KiB Q·28
+18:12:12.298295 db@close closing
+18:12:12.304211 table@build created L1@23 N·3 S·541B "b_9..55a,v23":"lasthash,v27"
+18:12:12.304459 table@build exiting
+18:12:12.304596 table@build revert @23
+18:12:12.305005 db@close done T·6.707083ms
+=============== Feb 19, 2023 (CST) ===============
+18:15:07.273942 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:15:07.274647 version@stat F·[5] S·2KiB[2KiB] Sc·[1.25]
+18:15:07.274677 db@open opening
+18:15:07.274776 journal@recovery F·1
+18:15:07.275963 journal@recovery recovering @21
+18:15:07.276739 version@stat F·[5] S·2KiB[2KiB] Sc·[1.25]
+18:15:07.305428 db@janitor F·7 G·0
+18:15:07.305496 db@open done T·30.801875ms
+18:15:07.305575 table@compaction L0·5 -> L1·0 S·2KiB Q·28
+18:15:07.309256 db@close closing
+18:15:07.314499 table@build created L1@25 N·3 S·541B "b_9..55a,v23":"lasthash,v27"
+18:15:07.314873 table@build exiting
+18:15:07.314898 table@build revert @25
+18:15:07.316379 db@close done T·7.118041ms
+=============== Feb 19, 2023 (CST) ===============
+18:15:09.230643 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:15:09.231174 version@stat F·[5] S·2KiB[2KiB] Sc·[1.25]
+18:15:09.231192 db@open opening
+18:15:09.231263 journal@recovery F·1
+18:15:09.232110 journal@recovery recovering @23
+18:15:09.241775 memdb@flush created L0@25 N·5 S·555B "b_9..55a,d30":"lasthash,v33"
+18:15:09.242114 version@stat F·[6] S·3KiB[3KiB] Sc·[1.50]
+18:15:09.261400 db@janitor F·8 G·0
+18:15:09.261685 db@open done T·30.48125ms
+18:15:09.261857 table@compaction L0·6 -> L1·0 S·3KiB Q·34
+18:15:09.262473 db@close closing
+18:15:09.267510 table@build created L1@28 N·2 S·407B "b_d..c7c,v32":"lasthash,v33"
+18:15:09.267538 table@build exiting
+18:15:09.267551 table@build revert @28
+18:15:09.267749 db@close done T·5.274083ms
+=============== Feb 19, 2023 (CST) ===============
+18:15:19.673600 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:15:19.674261 version@stat F·[6] S·3KiB[3KiB] Sc·[1.50]
+18:15:19.674285 db@open opening
+18:15:19.674387 journal@recovery F·1
+18:15:19.675444 journal@recovery recovering @26
+18:15:19.675953 version@stat F·[6] S·3KiB[3KiB] Sc·[1.50]
+18:15:19.701432 db@janitor F·8 G·0
+18:15:19.702451 db@open done T·28.151542ms
+18:15:19.702530 table@compaction L0·6 -> L1·0 S·3KiB Q·34
+18:15:19.703712 db@close closing
+18:15:19.708375 table@build created L1@30 N·2 S·407B "b_d..c7c,v32":"lasthash,v33"
+18:15:19.708397 table@build exiting
+18:15:19.708409 table@build revert @30
+18:15:19.709217 db@close done T·5.504ms
+=============== Feb 19, 2023 (CST) ===============
+18:15:22.705899 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:15:22.706610 version@stat F·[6] S·3KiB[3KiB] Sc·[1.50]
+18:15:22.706631 db@open opening
+18:15:22.706728 journal@recovery F·1
+18:15:22.707843 journal@recovery recovering @28
+18:15:22.718509 memdb@flush created L0@30 N·2 S·489B "b_0..9da,v35":"lasthash,v36"
+18:15:22.719190 version@stat F·[7] S·4KiB[4KiB] Sc·[1.75]
+18:15:22.738209 db@janitor F·9 G·0
+18:15:22.738375 db@open done T·31.723209ms
+18:15:22.738536 table@compaction L0·7 -> L1·0 S·4KiB Q·37
+18:15:22.739681 db@close closing
+18:15:22.744432 table@build created L1@33 N·3 S·550B "b_0..9da,v35":"lasthash,v36"
+18:15:22.744466 table@build exiting
+18:15:22.744491 table@build revert @33
+18:15:22.745069 db@close done T·5.384875ms

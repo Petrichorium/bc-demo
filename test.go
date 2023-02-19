@@ -19,9 +19,12 @@ func main() {
 	}
 	//释放数据库链接
 	defer db.Close()
+
 	//区块链测试
 	bc := blockchain.NewBlockchain(db)
+	//添加创世区块
 	bc.AddGensisBlock()
+
 	bc.
 		AddBlock("First Block.").
 		AddBlock("Second Block")
