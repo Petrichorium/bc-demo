@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/cn-org-Pretichor/bc-demo/blockchain"
+	"github.com/cn-org-Pretichor/bc-demo/wallet"
 	"github.com/syndtr/goleveldb/leveldb"
 	"log"
 	"os"
@@ -37,9 +38,9 @@ func main() {
 	}
 	switch strings.ToLower(arg1) {
 	case "create:block":
-		//为 createblock 命令增加一个 flag集合，标志集合
+		//为 create:block 命令增加一个 flag集合，标志集合
 		//flag.ExitOnError 的错误处理为，一旦解析失败，则 exit
-		fs := flag.NewFlagSet("createblock", flag.ExitOnError)
+		fs := flag.NewFlagSet("create:block", flag.ExitOnError)
 		//在集合中，添加需要解析的flag标志
 		txs := fs.String("txs", "", "")
 		//解析命令行参数
@@ -60,6 +61,17 @@ func main() {
 		bc.Clear()
 		//增加创世区块
 		bc.AddGensisBlock()
+	case "create:wallet":
+		//为 create:wallet 命令增加一个 flag集合，标志集合
+		//flag.ExitOnError 的错误处理为，一旦解析失败，则 exit
+		fs := flag.NewFlagSet("create:wallet", flag.ExitOnError)
+		//在集合中添加flag标志
+		pass := fs.String("pass", "", "")
+		//解析命令行参数
+		fs.Parse(os.Args[2:])
+		w := wallet.NewWallet(*pass)
+		fmt.Printf("your Mnemonic: %s \n", w.GetMnemonic())
+		fmt.Printf("your Address : %s \n", w.Address)
 	case "help":
 		fallthrough
 	default:
@@ -76,4 +88,5 @@ func Usage() {
 	fmt.Printf("\t%s\t\t%s\n", "bcli init", "initial blockchain.")
 	fmt.Printf("\t%s\t%s\n", "bcli create:block -txs=<txs>", "create block on blockchain.")
 	fmt.Printf("\t%s\t\t%s\n", "bcli show", "show blocks in chain.")
+	fmt.Printf("\t%s\t\t%s\n", "bcli create:wallet -pass=<pass>", "create wallet base on pass")
 }
