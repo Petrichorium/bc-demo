@@ -12,6 +12,27 @@ func main() {
 	//fmt.Println(b)
 
 	//数据库链接
+	//dbpath := "data"
+	//db, err := leveldb.OpenFile(dbpath, nil)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	////释放数据库链接
+	//defer db.Close()
+	//
+	////区块链测试
+	//bc := blockchain.NewBlockchain(db)
+	////添加创世区块
+	//bc.AddGensisBlock()
+	//
+	//bc.
+	//	AddBlock("First Block.").
+	//	AddBlock("Second Block")
+	////fmt.Println(bc)
+	//bc.Iterate()
+
+	//初始化数据库
+	//数据库链接
 	dbpath := "data"
 	db, err := leveldb.OpenFile(dbpath, nil)
 	if err != nil {
@@ -20,14 +41,8 @@ func main() {
 	//释放数据库链接
 	defer db.Close()
 
-	//区块链测试
+	//初始化区块链
 	bc := blockchain.NewBlockchain(db)
-	//添加创世区块
-	bc.AddGensisBlock()
 
-	bc.
-		AddBlock("First Block.").
-		AddBlock("Second Block")
-	//fmt.Println(bc)
-	bc.Iterate()
+	bc.GetBalance("1Q3Pr1KYzoFVuzdrmHBU49qJbQhdMGcLke")
 }

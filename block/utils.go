@@ -3,6 +3,7 @@ package block
 import (
 	"bytes"
 	"encoding/gob"
+	"github.com/cn-org-Pretichor/bc-demo/tx"
 	"time"
 )
 
@@ -15,9 +16,9 @@ type BlockData struct {
 	Bits            int       //难度相关
 	Nonce           int       //挖矿相关
 
-	Txs        string //交易列表
-	TxsCounter int    //交易计数器
-	HashCurr   Hash   //当前区块哈希值缓存
+	Txs        []*tx.TX //交易列表
+	TxsCounter int      //交易计数器
+	HashCurr   Hash     //当前区块哈希值缓存
 }
 
 // 区块序列化
